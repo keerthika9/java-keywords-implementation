@@ -1,10 +1,15 @@
 package com.stackroute.others;
 
 public class StringBuider {
-    public String stringBuilderReplacement(String name,String output){
-      StringBuilder stringBuilder=new StringBuilder();
-      String result=name.replaceAll(name,output);
-      return result;
-    }
+  public static void main(String[] args) {
+    StringBuilder sb=new StringBuilder("Hello ");
+    sb.insert(0,"Java");//now original string is changed
+    System.out.println(sb);//prints javahello
+    sb.replace(1,3,"Java");
+    System.out.println(sb);
+    sb.reverse();
+    System.out.println(sb);
   }
+
+}
 
